@@ -1,0 +1,28 @@
+<%-include("header")%>
+<%-include("nav")%>
+
+<div class="rounded-xl w-[80%] py-[3%]   m-auto">
+
+<h1 class="bg-red-200 w-[40%] rounded-xl p-3 m-auto text-center text-3xl font-extrabold text-red-400"> Login User</h1>
+
+<form action="/login-user" class="mt-[5%]  text-center" method="post">
+  <input class="w-[40%] mb-5 border border-zinc-500 p-3 rounded text-xl" type="text" placeholder="username" name="username"><br>
+  <!-- <input class="w-[40%] mb-5 border border-zinc-500 p-3 rounded text-xl" type="text" placeholder="email" name="email"><br> -->
+  <input class="w-[40%] mb-5 border border-zinc-500 p-3 rounded text-xl" type="text" placeholder="******" name="password">
+
+   <p class="w-[40%] text-left m-auto">
+    <a class="text-red-400" href="/forget-email">forget-password</a>
+   </p>
+   <button  class="mt-5 text-center block w-[40%] m-auto hover:bg-red-600 rounded text-white p-5 bg-red-400">Login</a>
+
+</form>
+</div>
+
+<!-- <br> -->
+
+<!-- <p class="flex justify-center gap-x-5 mt-10"> -->
+  <p class="  mt-1 mr-15 w-[100%]  text-center">Don't have an account?
+  <a class=" text-red-400" href="/register">Register</a>
+</p>
+<!-- </p> -->
+<%-include("footer")%>

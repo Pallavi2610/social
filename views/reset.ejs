@@ -1,0 +1,15 @@
+<%-include("header")%>
+<%-include("nav")%>
+
+<div class="rounded-xl w-[80%] py-[3%]  m-auto">
+
+<h1 class="bg-red-200 w-[40%] rounded-xl p-3 m-auto text-center text-3xl font-extrabold text-red-400"> Reset User password</h1>
+
+<form action="/reset-password/<%=user._id%>" class="mt-[5%] text-center" method="post">
+  <input class="w-[40%] mb-5 border border-zinc-500 p-3 rounded text-xl" type="text" placeholder="existing password" name="oldpassword"><br>
+  <input class="w-[40%] mb-5 border border-zinc-500 p-3 rounded text-xl" type="text" placeholder="new password" name="newpassword">
+  <button  class="mt-5 text-center block w-[40%] m-auto hover:bg-red-600 rounded text-white p-5 bg-red-400">Reset-password</a>
+
+</form>
+</div>
+<%-include("footer")%>
